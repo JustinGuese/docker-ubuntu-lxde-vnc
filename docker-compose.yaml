@@ -1,0 +1,6 @@
+services:
+  vncdesktop:
+    image: guestros/docker-ubuntu-lxde-vnc:latest
+    build: .
+    ports:
+      - '5900:5900'
