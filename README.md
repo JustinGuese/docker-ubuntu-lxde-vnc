@@ -2,6 +2,11 @@
 
 A simple docker image containing a GUI (lxde), firefox, python
 
+[![Build and Push Docker Image to Docker Hub](https://github.com/JustinGuese/docker-ubuntu-lxde-vnc/actions/workflows/main.yml/badge.svg)](https://github.com/JustinGuese/docker-ubuntu-lxde-vnc/actions/workflows/main.yml)
+
+Dockerhub: https://hub.docker.com/repository/docker/guestros/docker-ubuntu-lxde-vnc/
+Github: https://github.com/JustinGuese/docker-ubuntu-lxde-vnc
+
 ## Why?
 
 I first tried to use https://github.com/ConSol/docker-headless-vnc-container or https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/, but they were too old to install new packages.
