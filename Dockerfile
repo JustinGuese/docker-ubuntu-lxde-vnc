@@ -1,4 +1,4 @@
-FROM bitnami/minideb:latest AS base
+FROM ubuntu:latest AS base
 RUN apt update
 RUN apt install xorg lxde-core tightvncserver firefox python3 python3-pip wget curl -y
 RUN apt clean && \
