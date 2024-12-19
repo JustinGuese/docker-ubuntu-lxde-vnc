@@ -7,7 +7,7 @@ RUN apt autoremove -y
 # cretae config
 ENV USER=root
 RUN mkdir -p ~/.vnc && \
-    echo "password" | vncpasswd -f > ~/.vnc/passwd && \
+    echo "secret" | vncpasswd -f > ~/.vnc/passwd && \
     chmod 600 ~/.vnc/passwd && \
     tightvncserver :1
 RUN tightvncserver -kill :1
@@ -20,7 +20,7 @@ lxterminal &\n\
     chmod +x ~/.vnc/xstartup
 
 # switch this depending on arch
-RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-linux-amd64.tar.gz" \
+RUN wget -q "https://github.com/mozilla/geckodriver/releases/download/v0.35.0/geckodriver-v0.35.0-linux64.tar.gz" \
     -O /tmp/geckodriver.tar.gz && \
     tar -xzf /tmp/geckodriver.tar.gz -C /usr/local/bin && \
     chmod +x /usr/local/bin/geckodriver && \

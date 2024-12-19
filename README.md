@@ -12,4 +12,10 @@ Personally I am using this to run a selenium firefox browser with an extension, 
 
 ## How to use
 
-docker
+`docker run -p 5900:5900 guestros/docker-ubuntu-lxde-vnc:latest`
+
+or
+
+`docker compose up`
+
+Then using for example RealVNC Viewer to connect to `localhost:5900` with password `secret`
